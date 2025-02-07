@@ -45,8 +45,6 @@ nav ul li a {
 
 
 
-
-
 .burger-menu {
     display: none; 
     flex-direction: column;
@@ -56,8 +54,6 @@ nav ul li a {
     background: transparent; 
     border: none;
     outline: none;
-
-    /* ფიქსირებული პოზიცია კუთხეში */
     position: absolute;
     top: 15px;
     right: 20px;
@@ -71,7 +67,6 @@ nav ul li a {
 }
 
 
-/* Hero Section */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -92,8 +87,7 @@ nav ul li a {
     }
 }
 
-/* hero   */
-.hero {
+.main{
     position: relative;
     text-align: center;
     padding: 200px 20px;
@@ -105,7 +99,7 @@ nav ul li a {
     animation: fadeIn 1.5s ease-out;
 }
 
-.hero h4 {
+.main h4 {
     letter-spacing: 0.15em;
     font-size: 20px;
     font-family: "Playfair Display", serif;
@@ -114,7 +108,7 @@ nav ul li a {
     animation-delay: 0.5s;
 }
 
-.hero h1 {
+.main h1 {
     letter-spacing: 0.10em;
     font-size: 45px;
     font-style: italic;
@@ -147,7 +141,6 @@ nav ul li a {
     box-shadow: 0 5px 15px rgba(68, 89, 58, 0.3);
 }
 
-/* Albums  */
 .albums {
     display: flex;
     justify-content: center;
@@ -191,8 +184,6 @@ nav ul li a {
 
 }
 
-
-/* About  */
 .about {
     background-color: rgb(68, 89, 58,1);
     color: white;
@@ -215,7 +206,6 @@ nav ul li a {
     font-family: "Source Code Pro", serif;
 }
 
-/* Contact  */
 .contact {
     display: flex;
     justify-content: space-between;
@@ -229,7 +219,7 @@ nav ul li a {
 }
 .contact-info h3{
     letter-spacing: 0.35em;
-    font-size: 40px;
+    font-size: 38px;
     font-family: "Roboto Mono", serif;
     margin-bottom: 8px;
 }
@@ -261,9 +251,6 @@ form input, form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-
-
 
 
 
@@ -349,10 +336,6 @@ footer {
 
 
 
-
-
-
-
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -363,12 +346,6 @@ footer {
     padding: 10px;
     display: block; 
 }
-
-
-
-
-
-
 
 
 
@@ -390,16 +367,6 @@ footer {
 .scroll-to-top:hover {
     background: #444;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -474,17 +441,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* რესპონსივი  */
 @media (max-width: 1024px) {
     header {
         padding: 15px 50px;
@@ -568,6 +524,9 @@ footer {
     header {
         padding: 15px 20px;
     }
+    .main h1 {
+        font-size: 35px;
+    }
     .about {
         max-width: 95%;
     }
@@ -597,7 +556,7 @@ footer {
     header {
         padding: 15px 10px;
     }
-    .hero h1 {
+    .main h1 {
         font-size: 25px;
     }
     .about {
